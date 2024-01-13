@@ -1,0 +1,9 @@
+.header {
+	background: red;
+	padding: 5px;
+
+	@include tablet {}
+
+    @include desktop {}
+
+}
