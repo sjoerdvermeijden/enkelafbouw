@@ -18,10 +18,9 @@ get_header();
 
 <main id="primary" class="site-main">
 
-    Voorpagina
+    <?php get_template_part('template-parts/flexible-content'); ?>
 
 </main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();

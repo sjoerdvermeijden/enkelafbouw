@@ -1,5 +1,10 @@
 .footer {
 	background: red;
+	padding: 25px 0;
+
+	&__wrap {
+		@extend .wrap;
+	}
 
 	@include tablet {}
 

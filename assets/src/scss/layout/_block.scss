@@ -3,27 +3,6 @@
 
     position: relative;
 
-	&__background-illustration {
-		position: absolute;
-		display: none;
-		top: 50%;
-		transform: translate(0, -50%);
-		left: 0;
-		width: 300px;
-		height: auto;
-
-		svg {
-			width: 100%;
-			height: auto;
-		}
-
-		&--right {
-			right: 0;
-			left: auto;
-		}
-
-	}
-
 	&__title {
 
 		&:not(:last-child) {
@@ -79,27 +58,19 @@
         text-align: center;
     }
 
-	&--single {
-
-		#{$root}__padding {
-			padding: 25px 0;
-		}
-
+	&--gray {
+		background: color(grey, lighter);
+	}
+	
+	&--red {
+		background: color(red);
+	}
+	
+	&--yellow {
+		background: color(yellow);
 	}
 
     @include desktop {
-
-		&__background-illustration {
-			display: block;
-		}
-
-		&--single {
-
-			#{$root}__padding {
-				padding: 50px 0;
-			}
-
-		}
 
 		&__title {
 

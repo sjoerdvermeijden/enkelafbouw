@@ -69,7 +69,7 @@ function images() {
 
 function watch(){
     browserSync.init({
-        proxy: "sjoerd.test"
+        proxy: "enkelafbouw.test"
     });
     gulp.watch('./assets/src/scss/**/*.scss', gulp.series('styles'));
     gulp.watch('./assets/src/js/**/*.js', gulp.series('scripts'));

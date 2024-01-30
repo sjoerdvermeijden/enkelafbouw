@@ -1,26 +1,3 @@
-$linkedin: #007bb6;
-$instagram: #E1306C;
-$google: #db4437;
-$github: #6f42c1;
-$bitbucket: #2684FF;
-$wordpress: #4682b4;
-$codepen: #212121;
-$woocommerce: #96588a;
-$gatsby: #542C85;
-$css: #264DE4;
-$sketch: #FAD32E;
-$command-line: #309600;
-$php: #8993C1;
-$gulp: #DB4346;
-$html: #E44C26;
-$bem: #76b24f;
-$adobe: #a9a9a9;
-$mysql: #00758f;
-$scss: #CF679B;
-$git: #F1502F;
-$webpack: #8ED5FA;
-$javascript: #f0da50;
-
 $primary: color(grey);
 $secondary: #AD5C51;
 
@@ -50,69 +27,6 @@ $colors: (
 	darker: #287bdc,
     default: #4a90e2,
     lighter: #EEF6FF
-	),
-	linkedin: (
-		default: $linkedin
-	),
-	instagram: (
-		default: $instagram
-	),
-	google: (
-		default: $google
-	),
-	bitbucket: (
-		default: $bitbucket
-	),
-	github: (
-		default: $github
-	),
-	wordpress: (
-		default: $wordpress
-	),
-	woocommerce: (
-		default: $woocommerce
-	),
-	codepen: (
-		default: $codepen
-	),
-	javascript: (
-		default: $javascript
-	),
-	html: (
-		default: $html
-	),
-	gulp: (
-		default: $gulp
-	),
-	mysql: (
-		default: $mysql
-	),
-	sketch: (
-		default: $sketch
-	),
-	git: (
-		default: $git
-	),
-	php: (
-		default: $php
-	),
-	scss: (
-		default: $scss
-	),
-	webpack: (
-		default: $webpack
-	),
-	command-line: (
-		default: $command-line
-	),
-	adobe: (
-		default: $adobe
-	),
-	bem: (
-		default: $bem
-	),
-	css: (
-		default: $css
 	)
 );
 

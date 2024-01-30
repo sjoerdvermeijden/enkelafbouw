@@ -1,0 +1,37 @@
+.navigation {
+    $root: &;
+
+    display: none;
+
+    &__items {
+        list-style-type: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 25px;
+		}
+
+        &--current {
+
+            #{$root}__link {}
+
+        }
+
+    }
+
+    &__link {
+        position: relative;
+        text-decoration: none;
+        color: color(gray, dark);
+		font-size: rem(14px);
+    }
+
+    @include tablet {
+        display: block;
+    }
+
+}
+

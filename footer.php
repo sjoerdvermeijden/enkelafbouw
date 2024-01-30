@@ -12,8 +12,10 @@
 
 ?>
 
-<footer id="colophon" class="footer">
-	<p>Lorem, ipsum dolor.</p>
+<footer class="footer">
+	<div class="footer__wrap">
+		<p>Lorem, ipsum dolor.</p>
+	</div>
 </footer><!-- #colophon -->
 </div><!-- #page -->
 
