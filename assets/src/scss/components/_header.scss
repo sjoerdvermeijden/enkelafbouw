@@ -1,8 +1,5 @@
 .header {
-	position: absolute;
-	right: 0;
-	top: 0;
-
+	
 	&__inner {
 		@extend .wrap;
 	}

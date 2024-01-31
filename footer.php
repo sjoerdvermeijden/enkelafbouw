@@ -14,9 +14,15 @@
 
 <footer class="footer">
 	<div class="footer__wrap">
-		<p>Lorem, ipsum dolor.</p>
+
 	</div>
 </footer><!-- #colophon -->
+<div class="bottom">
+	<div class="bottom__inner">
+		<p>Lorem, ipsum dolor.</p>
+	</div>
+</div>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
