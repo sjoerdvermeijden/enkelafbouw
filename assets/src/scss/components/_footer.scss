@@ -1,6 +1,6 @@
 .footer {
 	background: color(grey, darker);
-	padding: 25px 0;
+	padding: 70px 0;
 	color: white;
 
 	&__wrap {
@@ -11,4 +11,56 @@
 
     @include desktop {}
 
+}
+
+.footer {
+	
+	&__items {
+		display: flex;
+		list-style: none;
+	}
+
+	&__item {
+		
+	}
+
+	@include tablet {
+
+		&__items {
+			display: flex;
+		}
+
+		&__item {
+			width: p(1, 4);
+
+			&--contact {
+				width: p(1, 2);
+			}
+		}
+	}
+}
+
+.footer-list {
+
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+		
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__header {
+		
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.list-item {
+	color: white;
 }

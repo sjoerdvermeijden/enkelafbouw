@@ -11,4 +11,14 @@ $image = get_field('image');
         <?php endif; ?>
     </figure>
 
+    <div class="panorama__inner">
+
+        <div class="panorama__label">
+
+            <h2 class="panorama__contact">T: 061234567</h2>
+
+        </div>
+
+    </div>
+
 </div>

@@ -28,6 +28,7 @@
 
 		<header id="masthead" class="header">
 			<div class="header__inner">
+				<div class="logo">Enkelafbouw</div>
 				<nav class="navigation">
 					<?php
 					wp_nav_menu(array(

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The template for displaying all single posts
+ * The template for displaying all single projects
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
@@ -32,6 +32,8 @@ get_header();
         </div>
 
     </div>
+
+    <?php get_template_part('template-parts/flexible-content'); ?>
 
 </main><!-- #main -->
 

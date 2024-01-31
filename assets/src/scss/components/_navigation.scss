@@ -2,17 +2,16 @@
     $root: &;
 
     display: none;
+    margin-left: auto;
 
     &__items {
         list-style-type: none;
+        margin-left: auto;
+        display: flex;
     }
 
     &__item {
         display: inline-block;
-
-        &:not(:last-child) {
-            margin-right: 25px;
-		}
 
         &--current {
 
@@ -27,12 +26,12 @@
         text-decoration: none;
         color: color(gray, dark);
 		font-size: rem(14px);
-        padding: 10px 5px;
+        padding: 30px 15px;
         display: inline-block;
 
         &:hover,
         &:focus {
-            background: color(yellow);
+            background: orange;
         }
     }
 

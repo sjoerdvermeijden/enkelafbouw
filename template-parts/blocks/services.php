@@ -1,4 +1,4 @@
-<div class="block block--grey">
+<div class="block">
 
     <div class="block__padding">
 

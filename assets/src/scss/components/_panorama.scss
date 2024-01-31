@@ -1,10 +1,50 @@
 .panorama {
+    
+    &__inner {
+        position: relative;
+        @extend .wrap;
+    }
 
     &__image {
-        height: 450px;
+        height: 500px;
 
         img {
             object-fit: cover;;
         }
+    }
+
+    &__label {
+        position: absolute;
+        right: 0;
+        bottom: -39px;
+        padding: 20px 10px;
+        background: orange;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            background: orange;
+            width: 55px;
+            height: 55px;
+            position: absolute;
+            left: -28px;
+            top: 11px;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            content: '';
+            background: orange;
+            width: 1000px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &__contact {
+        z-index: 1;
+        position: relative;
     }
 }
