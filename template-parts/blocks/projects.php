@@ -51,6 +51,12 @@
 
             </div>
 
+            <div class="block__footer">
+
+                <a href="">Alle projecten</a>
+
+            </div>
+
         </div>
 
     </div>

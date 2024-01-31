@@ -28,7 +28,7 @@
 
 		<header id="masthead" class="header">
 			<div class="header__inner">
-				<div class="logo">Enkelafbouw</div>
+				<a href="<?php echo get_home_url(); ?>" class="logo">Enkelafbouw</a>
 				<nav class="navigation">
 					<?php
 					wp_nav_menu(array(

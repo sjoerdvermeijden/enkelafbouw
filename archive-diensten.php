@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The template for displaying projects archive
+ * The template for displaying services archive
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -23,7 +23,7 @@ get_header();
 
                 <div class="block__header">
 
-                    <h1 class="block__title">Projecten</h1>
+                    <h1 class="block__title">Diensten</h1>
 
                 </div>
 
@@ -32,36 +32,29 @@ get_header();
                     <?php
                     // WP_Query arguments
                     $args = array(
-                        'post_type'              => array('projecten'),
+                        'post_type'              => array('diensten'),
                     );
 
                     // The Query
                     $query = new WP_Query($args); ?>
 
-                    <ul class="projects">
+                    <ul class="services">
 
 
                         <?php if ($query->have_posts()) : ?>
                             <?php while ($query->have_posts()) : ?>
                                 <?php $query->the_post(); ?>
 
-                                <li class="projects__item">
+                                <li class="services__item">
 
-                                    <a href="<?php the_permalink(); ?>" class="project">
+                                    <div class="service">
 
-                                        <figure class="project__image">
-                                            <?php echo get_the_post_thumbnail($post_id, 'medium'); ?>
-                                        </figure>
+                                        <h3 class="service__title"><?php the_title(); ?></h3>
 
-                                        <div class="project__content">
-
-                                            <h3 class="project__title"><?php the_title(); ?></h3>
-
-                                        </div>
-
-                                    </a>
+                                    </div>
 
                                 </li>
+
                             <?php endwhile; ?>
                         <?php endif; ?>
 

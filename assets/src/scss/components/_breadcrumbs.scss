@@ -1,0 +1,8 @@
+.breadcrumbs {
+    padding: 20px 0;
+    background: orange;
+
+    &__inner {
+        @extend .wrap;
+    }
+}

@@ -13,6 +13,8 @@ get_header();
 
 <main id="primary" class="site-main">
 
+    <?php get_template_part('template-parts/breadcrumbs'); ?>
+
     <div class="block">
 
         <div class="block__padding">
@@ -21,7 +23,7 @@ get_header();
 
                 <div class="block__header block__header--center">
 
-                    <h1 class="block__title"></h1>
+                    <h1 class="block__title"><?php the_title(); ?></h1>
 
                 </div>
 
