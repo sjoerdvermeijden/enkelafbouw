@@ -24,6 +24,8 @@ function create_posttype()
 			'has_archive' => true,
 			'rewrite' => array('slug' => 'diensten'),
 			'show_in_rest' => true,
+			'supports' => array('title', 'editor', 'thumbnail'),
+			'menu_icon'           => 'dashicons-book',
 
 		)
 	);
@@ -47,6 +49,8 @@ function create_projectposttype()
 			'has_archive' => true,
 			'rewrite' => array('slug' => 'projecten'),
 			'show_in_rest' => true,
+			'supports' => array('title', 'editor', 'thumbnail'),
+			'menu_icon'           => 'dashicons-admin-home',
 
 		)
 	);

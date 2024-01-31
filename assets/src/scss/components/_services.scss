@@ -21,4 +21,8 @@
 .service {
     padding: 15px;
     background: color(grey, lighter);
+
+    &__title {
+        text-align: center;
+    }
 }

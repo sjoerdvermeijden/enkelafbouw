@@ -1,6 +1,7 @@
 .footer {
-	background: red;
+	background: color(grey, darker);
 	padding: 25px 0;
+	color: white;
 
 	&__wrap {
 		@extend .wrap;

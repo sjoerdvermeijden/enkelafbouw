@@ -24,11 +24,19 @@
 
                             <li class="projects__item">
 
-                                <div class="project">
+                                <a href="<?php the_permalink(); ?>" class="project">
 
-                                    <h3 class="project__title"><?php the_title(); ?></h3>
+                                    <figure class="project__image">
+                                        <?php echo get_the_post_thumbnail($post_id, 'medium'); ?>
+                                    </figure>
 
-                                </div>
+                                    <div class="project__content">
+
+                                        <h3 class="project__title"><?php the_title(); ?></h3>
+
+                                    </div>
+
+                                </a>
 
                             </li>
 

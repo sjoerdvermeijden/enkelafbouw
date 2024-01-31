@@ -1,0 +1,10 @@
+.panorama {
+
+    &__image {
+        height: 450px;
+
+        img {
+            object-fit: cover;;
+        }
+    }
+}
