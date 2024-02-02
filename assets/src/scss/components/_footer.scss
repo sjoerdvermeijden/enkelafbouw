@@ -6,22 +6,9 @@
 	&__wrap {
 		@extend .wrap;
 	}
-
-	@include tablet {}
-
-    @include desktop {}
-
-}
-
-.footer {
 	
 	&__items {
-		display: flex;
 		list-style: none;
-	}
-
-	&__item {
-		
 	}
 
 	@include tablet {

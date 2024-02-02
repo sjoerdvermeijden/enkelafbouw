@@ -1,0 +1,78 @@
+.wpcf7-form {
+
+	.contact-header {
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+
+	}
+
+	@include tablet {
+
+		.contact-header {
+			display: flex;
+
+			.contact-half {
+				width: 50%;
+
+				&:not(:last-child) {
+					margin-right: 30px;
+					margin-bottom: 0;
+				}
+
+			}
+
+		}
+
+	}
+
+	label {
+		font-size: rem(14px);
+
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+
+	}
+
+	label,
+	textarea {
+		display: block;
+		width: 100%;
+	}
+
+	input, textarea {
+
+		&:not(.submit-button) {
+			border-width: 0;
+			display: block;
+			width: 100%;
+			background: color(gray, lighter);
+			padding: 23px;
+			box-shadow: 7px 7px 0 2px rgba(0,0,0,0.2);
+
+			&::placeholder {
+				font-family: $font-family;
+				font-size: rem(14px);
+			}
+
+		}
+
+	}
+
+	.submit-button {
+		background: white;
+		font-size: rem(14px);
+		font-family: $font-family;
+
+		&:hover,
+		&:focus {
+			background: color(green);
+			color: white;
+			cursor: pointer;
+		}
+
+	}
+
+}

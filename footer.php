@@ -14,11 +14,16 @@
 
 <footer class="footer">
 	<div class="footer__wrap">
+
 		<ul class="footer__items">
 
 			<li class="footer__item footer__item--contact">
 
-				<h3 class="footer-items__header">Contact</h3>
+				<div class="footer-list">
+
+					<h3 class="footer-list__header">Contact</h3>
+
+				</div>
 
 			</li>
 

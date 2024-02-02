@@ -28,10 +28,12 @@
 		font-size: rem(14px);
         padding: 30px 15px;
         display: inline-block;
+        transition: color 0s;
 
         &:hover,
         &:focus {
             background: orange;
+            color: white;
         }
     }
 

@@ -27,6 +27,14 @@ get_header();
 
 				</div>
 
+				<div class="block__main">
+
+					<div class="content">
+						<?php the_content(); ?>
+					</div>
+
+				</div>
+
 			</div>
 
 		</div>
