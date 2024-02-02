@@ -1,5 +1,9 @@
 <div class="breadcrumbs">
     <div class="breadcrumbs__inner">
-        <p>Lorem.</p>
+        <?php
+        if (function_exists('yoast_breadcrumb')) {
+            yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
+        }
+        ?>
     </div>
 </div>
