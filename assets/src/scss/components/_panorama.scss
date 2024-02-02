@@ -6,7 +6,7 @@
     }
 
     &__image {
-        height: 500px;
+        height: 250px;
 
         img {
             object-fit: cover;;
@@ -17,20 +17,10 @@
         position: absolute;
         right: 0;
         bottom: -39px;
-        padding: 20px 10px;
+        padding: 30px 15px;
         background: orange;
         z-index: 1;
-
-        &::before {
-            content: '';
-            background: orange;
-            width: 55px;
-            height: 55px;
-            position: absolute;
-            left: -28px;
-            top: 11px;
-            transform: rotate(45deg);
-        }
+        color: white;
 
         &::after {
             content: '';
@@ -46,5 +36,16 @@
     &__contact {
         z-index: 1;
         position: relative;
+    }
+
+    @include tablet {
+
+        &__image {
+            height: 500px;
+    
+            img {
+                object-fit: cover;;
+            }
+        }
     }
 }

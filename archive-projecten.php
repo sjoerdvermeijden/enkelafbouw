@@ -29,45 +29,57 @@ get_header();
 
                 <div class="block__main">
 
-                    <?php
-                    // WP_Query arguments
-                    $args = array(
-                        'post_type'              => array('projecten'),
-                    );
+                    <div class="columns">
 
-                    // The Query
-                    $query = new WP_Query($args); ?>
+                        <div class="columns__item columns__item--small">
 
-                    <ul class="projects">
+                        </div>
+
+                        <div class="columns__item columns__item--large">
+
+                            <?php
+                            // WP_Query arguments
+                            $args = array(
+                                'post_type'              => array('projecten'),
+                            );
+
+                            // The Query
+                            $query = new WP_Query($args); ?>
+
+                            <ul class="projects">
 
 
-                        <?php if ($query->have_posts()) : ?>
-                            <?php while ($query->have_posts()) : ?>
-                                <?php $query->the_post(); ?>
+                                <?php if ($query->have_posts()) : ?>
+                                    <?php while ($query->have_posts()) : ?>
+                                        <?php $query->the_post(); ?>
 
-                                <li class="projects__item">
+                                        <li class="projects__item">
 
-                                    <a href="<?php the_permalink(); ?>" class="project">
+                                            <a href="<?php the_permalink(); ?>" class="project">
 
-                                        <figure class="project__image">
-                                            <?php echo get_the_post_thumbnail($post_id, 'medium'); ?>
-                                        </figure>
+                                                <figure class="project__image">
+                                                    <?php echo get_the_post_thumbnail($post_id, 'medium'); ?>
+                                                </figure>
 
-                                        <div class="project__content">
+                                                <div class="project__content">
 
-                                            <h3 class="project__title"><?php the_title(); ?></h3>
+                                                    <h3 class="project__title"><?php the_title(); ?></h3>
 
-                                        </div>
+                                                </div>
 
-                                    </a>
+                                            </a>
 
-                                </li>
-                            <?php endwhile; ?>
-                        <?php endif; ?>
+                                        </li>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
 
-                        <?php wp_reset_postdata(); ?>
+                                <?php wp_reset_postdata(); ?>
 
-                    </ul>
+                            </ul>
+
+                        </div>
+
+                    </div>
 
                 </div>
 

@@ -19,7 +19,19 @@
 
                 <div class="block__main">
 
-                    <?php echo do_shortcode('[contact-form-7 id="44d9806" title="Contactformulier 1"]'); ?>
+                    <div class="columns">
+
+                        <div class="columns__item columns__item--small">
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+
+                        <div class="columns__item columns__item--large">
+
+                            <?php echo do_shortcode('[contact-form-7 id="44d9806" title="Contactformulier 1"]'); ?>
+
+                        </div>
+
+                    </div>
 
                 </div>
 

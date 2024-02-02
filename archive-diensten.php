@@ -29,38 +29,48 @@ get_header();
 
                 <div class="block__main">
 
-                    <?php
-                    // WP_Query arguments
-                    $args = array(
-                        'post_type'              => array('diensten'),
-                    );
+                    <div class="columns">
 
-                    // The Query
-                    $query = new WP_Query($args); ?>
+                        <div class="columns__item columns__item--small"></div>
 
-                    <ul class="services">
+                        <div class="columns__item columns__item--large">
+
+                            <?php
+                            // WP_Query arguments
+                            $args = array(
+                                'post_type'              => array('diensten'),
+                            );
+
+                            // The Query
+                            $query = new WP_Query($args); ?>
+
+                            <ul class="services">
 
 
-                        <?php if ($query->have_posts()) : ?>
-                            <?php while ($query->have_posts()) : ?>
-                                <?php $query->the_post(); ?>
+                                <?php if ($query->have_posts()) : ?>
+                                    <?php while ($query->have_posts()) : ?>
+                                        <?php $query->the_post(); ?>
 
-                                <li class="services__item">
+                                        <li class="services__item">
 
-                                    <div class="service">
+                                            <div class="service">
 
-                                        <h3 class="service__title"><?php the_title(); ?></h3>
+                                                <h3 class="service__title"><?php the_title(); ?></h3>
 
-                                    </div>
+                                            </div>
 
-                                </li>
+                                        </li>
 
-                            <?php endwhile; ?>
-                        <?php endif; ?>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
 
-                        <?php wp_reset_postdata(); ?>
+                                <?php wp_reset_postdata(); ?>
 
-                    </ul>
+                            </ul>
+
+                        </div>
+
+                    </div>
 
                 </div>
 

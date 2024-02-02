@@ -36,7 +36,7 @@
 	&__item {
 		
 		&:not(:last-child) {
-			margin-bottom: 15px;
+			margin-bottom: 10px;
 		}
 	}
 
@@ -48,8 +48,8 @@
 			position: absolute;
 			height: 2px;
 			width: 65px;
-			top: 32px;
-			left: 5px;
+			top: 34px;
+			left: 6px;
 			background: white;
 		}
 		
@@ -59,11 +59,31 @@
 	}
 }
 
-.list-item {
+.footer-item {
+	$root: &;
+
 	color: white;
+	display: flex;
+	align-items: center;
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+		color: white;
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+		
+	}
 
 	&:hover,
 	&:focus {
 		color: color(orange);
+		
+		#{$root}__icon {
+			color: color(orange);
+		}
 	}
+
 }

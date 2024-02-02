@@ -70,5 +70,7 @@ if (function_exists('acf_add_options_page')) {
 }
 
 // Custom image size
-
 add_image_size('slider-image', 600, 200);
+
+// Turn off p tags contact form 7
+define('WPCF7_AUTOP', false);
