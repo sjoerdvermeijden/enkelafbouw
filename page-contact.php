@@ -12,7 +12,16 @@
 
             <div class="block__wrap">
 
+                <div class="block__header">
 
+
+                </div>
+
+                <div class="block__main">
+
+                    <?php echo do_shortcode('[contact-form-7 id="44d9806" title="Contactformulier 1"]'); ?>
+
+                </div>
 
             </div>
 

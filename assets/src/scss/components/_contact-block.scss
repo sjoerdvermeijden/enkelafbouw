@@ -1,0 +1,12 @@
+.contact-block {
+    text-align: center;
+
+    &__title {
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+        
+    }
+
+}

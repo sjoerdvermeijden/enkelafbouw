@@ -12,6 +12,14 @@
 
             <div class="block__main">
 
+                <div class="contact-block">
+
+                    <h3 class="contact-block__title">Interesse? Neem contact op via de onderstaande button</h3>
+
+                    <a href="<?php echo home_url('/contact'); ?>" class="contact-block__link button">Neem contact op</a>
+
+                </div>
+
             </div>
 
         </div>

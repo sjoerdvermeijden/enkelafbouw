@@ -53,7 +53,7 @@
 
             <div class="block__footer">
 
-                <a href="<?php echo home_url('/projecten'); ?>">Alle projecten</a>
+                <a href="<?php echo home_url('/projecten'); ?>" class="button">Alle projecten</a>
 
             </div>
 

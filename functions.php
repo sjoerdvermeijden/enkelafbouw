@@ -145,7 +145,7 @@ function enkelafbouw_scripts()
 {
 	wp_enqueue_style('enkelafbouw-styles', get_template_directory_uri() . '/assets/dist/css/style.min.css', false, '1.0.0', 'all');
 
-	wp_enqueue_script('enkelafbouw-scripts', get_template_directory_uri() . '/assets/dist/js/script.min.js', array(), '1.0.0', true);
+	wp_enqueue_script('enkelafbouw-scripts', get_template_directory_uri() . '/assets/dist/js/script.min.js', array(), '1.0.1', true);
 
 	wp_style_add_data('enkelafbouw-style', 'rtl', 'replace');
 

@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
