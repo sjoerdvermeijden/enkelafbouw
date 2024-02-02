@@ -6,7 +6,7 @@
 
             <div class="block__header block__header--center">
 
-                <h1 class="block__title">Contact</h1>
+                <h2 class="block__title">Contact</h2>
 
             </div>
 

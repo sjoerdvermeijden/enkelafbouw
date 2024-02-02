@@ -57,3 +57,18 @@ function create_projectposttype()
 }
 // Hooking up our function to theme setup
 add_action('init', 'create_projectposttype');
+
+// Options
+
+if (function_exists('acf_add_options_page')) {
+
+	acf_add_options_sub_page(array(
+		'page_title'     => 'Projecten Page Content',
+		'menu_title'    => 'projecten-page-content',
+		'parent_slug'    => 'edit.php?post_type=projecten',
+	));
+}
+
+// Custom image size
+
+add_image_size('slider-image', 600, 200);

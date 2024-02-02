@@ -6,7 +6,7 @@
 
             <div class="block__header block__header--center">
 
-                <h1 class="block__title">Diensten</h1>
+                <h2 class="block__title">Diensten</h2>
 
             </div>
 
@@ -25,6 +25,14 @@
                             <li class="services__item">
 
                                 <div class="service">
+
+                                    <div class="service__icon icon">
+
+                                        <svg>
+                                            <use xlink:href="<?php echo esc_url(home_url('/wp-content/themes/enkelafbouw/assets/dist/svg/svg-sprite.svg#new-checked')); ?>"></use>
+                                        </svg>
+
+                                    </div>
 
                                     <h3 class="service__title"><?php the_title(); ?></h3>
 

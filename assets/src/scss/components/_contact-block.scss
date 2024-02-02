@@ -2,6 +2,7 @@
     text-align: center;
 
     &__title {
+        font-weight: normal;
 
         &:not(:last-child) {
             margin-bottom: 25px;

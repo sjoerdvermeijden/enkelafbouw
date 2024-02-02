@@ -54,13 +54,29 @@
 	}
 
 	&__header {
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			height: 2px;
+			width: 65px;
+			top: 32px;
+			left: 5px;
+			background: white;
+		}
 		
 		&:not(:last-child) {
-			margin-bottom: 15px;
+			margin-bottom: 25px;
 		}
 	}
 }
 
 .list-item {
 	color: white;
+
+	&:hover,
+	&:focus {
+		color: color(orange);
+	}
 }

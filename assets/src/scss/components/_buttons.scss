@@ -1,6 +1,13 @@
 .button {
     padding: 8px;
-    background: orange;
+    background: color(orange);
     color: white;
     border-radius: 5px;
+    transition: background .3s ease;
+    display: inline-block;
+
+    &:hover,
+    &:focus {
+        background: color(orange, darker);
+    }
 }

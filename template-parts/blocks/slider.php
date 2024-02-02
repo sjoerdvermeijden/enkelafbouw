@@ -26,7 +26,7 @@
 
                                 <div class="swiper-slide">
                                     <div class="slide">
-                                        <figure class="slide-image"><?php echo get_the_post_thumbnail($post_id, 'medium'); ?></figure>
+                                        <figure class="slide-image"><?php echo get_the_post_thumbnail($post_id, 'slider-image'); ?></figure>
                                     </div>
                                 </div>
 
