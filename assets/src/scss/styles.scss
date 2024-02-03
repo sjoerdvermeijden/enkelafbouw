@@ -9,6 +9,8 @@
 @import "components/bottom";
 @import "components/footer";
 @import "components/navigation";
+@import "components/mobile-navigation";
+@import "components/navigation-button";
 @import "components/contact-block";
 @import "components/breadcrumbs";
 @import "components/buttons";
@@ -24,5 +26,6 @@
 // Layout
 @import "layout/body";
 @import "layout/main";
+@import "layout/offcanvas";
 @import "layout/wrap";
 @import "layout/block";

@@ -1,0 +1,50 @@
+.mobile-navigation {
+	$root: &;
+
+    background: lighten(color(green), 15%);
+
+    &__items {
+        list-style-type: none;
+    }
+
+    &__item {
+
+        &:first-child {
+
+			#{$root}__link {
+				border-top: 1px solid color(green);
+			}
+
+        }
+
+		#{$root}__link {
+			border-bottom: 1px solid color(green, darker);
+		}
+
+        &:hover,
+        &:focus {
+
+            #{$root}__link {
+				background: color(green, darker);
+                border-bottom: 1px solid color(green, darker);
+            }
+
+        }
+
+    }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        padding: 12px 20px;
+        width: 100%;
+        color: color(grey, lighter);
+
+        &:hover,
+        &:focus {
+            background: color(green);
+        }
+
+    }
+
+}

@@ -15,4 +15,41 @@ html {
 .site {
 	position: relative;
 	overflow: hidden;
+
+	&__offcanvas {
+		position: fixed;
+		left: 100vw;
+		width: 100vw;
+		height: 100vh;
+		background: color(grey, lighter);
+		transition: transform .3s ease;
+		z-index: 3;
+
+		.is-open & {
+			transform: translateX(-100vw);
+		}
+
+	}
+
+	@include mobile {
+
+		&__offcanvas {
+			width: 300px;
+
+			.is-open & {
+				transform: translateX(-300px);
+			}
+
+		}
+
+	}
+
+	@include desktop {
+
+		.is-open & {
+			transform: translateX(0);
+		}
+
+	}
+
 }

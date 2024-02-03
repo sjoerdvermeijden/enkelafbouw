@@ -1,0 +1,45 @@
+.offcanvas {
+
+	&__header {
+		display: flex;
+		align-items: center;
+		padding: 12px 20px;
+		color: white;
+		background: color(gray, dark);
+	}
+
+	&__close {
+		padding: 13px 7px 16px 4px;
+		background: none;
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+		border-width: 0;
+
+		span {
+			display: inline-block;
+			width: 30px;
+			height: 3px;
+			background: white;
+
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+
+			&:nth-child(1) {
+				transform: rotate(45deg) translate(7px, 5px);
+			}
+
+			&:nth-child(2) {
+				display: none;
+			}
+
+			&:nth-child(3) {
+				transform: rotate(-45deg) translate(3px,-1px);
+			}
+
+		}
+
+	}
+
+}
