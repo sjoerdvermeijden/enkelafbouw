@@ -29,6 +29,11 @@ get_header();
 
                 <div class="block__main">
 
+                    <div class="columns">
+                        <div class="columns__item columns__item--small"></div>
+                        <div class="columns__item columns__item--large"></div>
+                    </div>
+
                     <div class="content">
                         <?php the_content(); ?>
                     </div>

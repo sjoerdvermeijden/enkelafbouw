@@ -32,7 +32,7 @@ get_header();
                     <div class="columns">
 
                         <div class="columns__item columns__item--small">
-
+                            <aside class="sidebar"></aside>
                         </div>
 
                         <div class="columns__item columns__item--large">

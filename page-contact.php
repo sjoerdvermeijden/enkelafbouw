@@ -14,6 +14,7 @@
 
                 <div class="block__header">
 
+                    <h1 class="block__title">Contact</h1>
 
                 </div>
 
@@ -22,7 +23,9 @@
                     <div class="columns">
 
                         <div class="columns__item columns__item--small">
-                            <p>Lorem, ipsum dolor.</p>
+                            <aside class="sidebar">
+                                <p>Lorem, ipsum dolor.</p>
+                            </aside>
                         </div>
 
                         <div class="columns__item columns__item--large">

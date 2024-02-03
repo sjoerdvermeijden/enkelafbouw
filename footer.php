@@ -50,14 +50,6 @@
 
 									<a href="<?php the_permalink(); ?>" class="footer-item">
 
-										<div class="footer-item__icon icon">
-
-											<svg>
-												<use xlink:href="<?php echo esc_url(home_url('/wp-content/themes/enkelafbouw/assets/dist/svg/svg-sprite.svg#new-checked')); ?>"></use>
-											</svg>
-
-										</div>
-
 										<span class="footer-item__label">
 											<?php the_title(); ?>
 										</span>
@@ -99,14 +91,6 @@
 								<li class="footer-list__item">
 
 									<a href="<?php the_permalink(); ?>" class="footer-item">
-
-										<div class="footer-item__icon icon">
-
-											<svg>
-												<use xlink:href="<?php echo esc_url(home_url('/wp-content/themes/enkelafbouw/assets/dist/svg/svg-sprite.svg#new-checked')); ?>"></use>
-											</svg>
-
-										</div>
 
 										<span class="footer-item__label">
 											<?php the_title(); ?>
